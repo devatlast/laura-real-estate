@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Real Estate Agency</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div id="agent-info">
+        <h1>Laura Real Estate Agency</h1>
+        <p>Everyone deserves a loving home without breaking the bank.</p>
+        </div>
+    </header>
+
+
+    <div id="admin-login">
+    <h2 id="admin-welcome">Welcome Back</h2>
+    
+    <div id="login-form">
+    <input id="email" placeholder="Email">
+    <input id="password" placeholder="Password" type="password">
+    <div id="log-btn">
+        <button onclick="login()">Login</button>
+    </div>
+    </div>
+
+    </div>
+
+    <script type="module">
+        import {auth} from "./js/firebase.js";
+
+        import{ signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+        window.login = function() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            signInWithEmailAndPassword(auth,email,password).then (()=> {
+                window.location.href="admin.html";
+            })  
+            .catch(()=> {
+                alert("Login Failed");
+            });
+
+        }
+
+    </script>
+
+
+</body>
+</html>

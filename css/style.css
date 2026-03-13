@@ -1,0 +1,349 @@
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ======
+Agency Header starts here=== */
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    width: auto;
+    align-items: center;
+}
+.agent {
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.agent>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.agent> p {
+    font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bottom-header{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#search-input {
+    width: 600px;
+    border-radius: 25px;
+    background: gainsboro;
+    border: none;
+    height: 30px;
+    margin: 30px;
+}
+#locations {
+    background: darkseagreen;
+    color: white;
+    border-radius: 20px;
+    
+    cursor: pointer;
+    font-weight: 600;
+}
+/* ======
+Ends Here =====*/
+
+
+/* =======
+Property Homepage listings starts here ======= */
+#listings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card {
+    width: auto;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-bottom: 1px solid lightgray;
+    padding: 10px 10px 10px 10px;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+.card:hover{
+    transform: translateY(-7px);
+}
+.card button {
+    border: none;
+    background: blue;
+    border-radius: 25px;
+    color: aliceblue;
+    height: 25px;
+    font-weight: 650;
+}
+/* ======
+Ends Here ===== */
+
+/* ======
+Button to control number of listings made available on Homepage  ===
+*/
+/*#load-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: last baseline;
+}
+#load-more{
+    color: white;
+    border-style: none;
+    border-radius: 15px;
+    height: 24px;
+    font-weight: 550;
+    background: blue;
+    cursor: pointer;
+}
+/* ========
+Ends here ===== */
+
+
+
+/* ========
+Admin login starts here ======= */
+
+#admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#login-form {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 14px;
+    gap: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    background: white;
+    margin-bottom: 30px;
+    border-left: 1px solid red;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-right: 1px solid blue;
+}
+#email, #password {
+    height: 25px;
+    width: 300px;
+    background: whitesmoke;
+    border-radius: 20px;
+    border: none;
+    color: black;
+}
+#admin-welcome {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 20px;
+}
+#login-form > input:focus {
+    border-color: floralwhite;
+}
+#log-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#log-btn > button {
+    background: blue;
+    border-radius: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-style: none;
+    align-items: center;
+    height: 30px;
+    width: 90px;
+}
+#agent-info {
+    margin-top: 30px;
+}
+#agent-info > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#agent-info > p {
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+}
+/*==========
+Admin login page ends here ====== */
+
+
+
+/* ==== Admin Property Upload 
+starts Here ====== */
+#property-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+#admin-dash > h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#propertyForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 4px 6px solid rgba(0,0,0,0.5);
+    background: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+#propertForm > input {
+    background: white;
+    height: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#listing-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#listing-btn> button {
+    color: white;
+    font-weight: 500;
+    background: blue;
+    height: 28px;
+    border-radius: 25px;
+}
+
+
+#adminListings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    gap: 20px;
+}
+.delete-listing {
+    background: whitesmoke;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    border-bottom: 4px solid whitesmoke;
+}
+.delete-listing button {
+    color: white;
+    background: red;
+    border-radius: 20px;
+}
+#delete-intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: dotted;
+}
+
+/*=========
+Admin Property listings control ends here 
+========= */
+
+/*======Footer ======*/
+footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 15px;
+}
+#load-more{
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+    height: 24px;
+    font-weight: 550;
+    background: rgb(1, 1, 40);
+    cursor: pointer;
+}
+
+#copyright {
+    
+    background: white;
+    flex: 1;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+
+/* ===== Property viewing starts here 
+============= */
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+#gallery img{
+    border-radius: 8px;
+}
+
+#property-box{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+#property{
+    border: 2px solid #1e293b;
+    padding: 40px 20px;
+}
+#property p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+#property h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+#property button {
+    color: white;
+    cursor: pointer;
+    background: #1e293b;
+    border-radius: 8px;
+    font-weight: 600;
+    height: 40px;
+    gap: 30px;
+}
+#property-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* ====== Property Viewing page ends Here
+======== */

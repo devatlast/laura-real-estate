@@ -1,0 +1,63 @@
+
+<script type="module">
+    import {auth} from "./js/firebase.js";
+
+    import { onAuthStateChanged} from  "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    onAuthStateChanged(auth,(user)=> {
+       if (!user) {
+        window.location.href="login.html";
+       }
+    });
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Real Estate Agency</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div id="agent-info">
+        <h1>Laura Real Estate Agency</h1>
+        <p>Everyone deserves a loving home without breaking the bank.</p>
+        </div>
+    </header>
+
+
+    <div id="property-container">
+        <div id="admin-dash">
+    <h2>Add new Listing</h2>
+        </div>
+
+    <form id="propertyForm">
+        <input type="file" id="image" multiple accept="image/*" >
+        <input id="title" placeholder="Title">
+        <input id="price" placeholder="Price">
+        <input id="location" placeholder="Location">
+        <textarea  id="description"></textarea>
+
+        <div id="listing-btn">
+        <button id="submit-btn" type="submit">Add Property</button>
+        </div>
+    </form>
+    </div>
+
+    <div id="delete-intro">
+        <h2>Delete Listing</h2>
+        </div>
+
+
+    <div id="adminListings"></div>
+
+    <footer>
+        <p id="copyright">© 2026 Laura Real estate agency. All rights reserved.</p>
+    </footer>
+    
+</body>
+<script type="module" src="js/admin.js"></script>
+</html>
