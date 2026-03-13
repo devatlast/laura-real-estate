@@ -84,7 +84,7 @@ Property Homepage listings starts here ======= */
 .card button {
     border: none;
     background: blue;
-    border-radius: 25px;
+    border-radius: 10px;
     color: aliceblue;
     height: 25px;
     font-weight: 650;
