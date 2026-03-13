@@ -30,7 +30,7 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .agent> p {
-    font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #bottom-header{
     display: flex;
@@ -64,6 +64,7 @@ Property Homepage listings starts here ======= */
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
     background: white;
+    padding: 20px;
     font-weight: 500;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
