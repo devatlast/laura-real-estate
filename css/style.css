@@ -38,7 +38,8 @@ header {
     box-sizing: border-box;
 }
 #search-input {
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     border-radius: 25px;
     background: gainsboro;
     border: none;

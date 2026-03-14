@@ -45,6 +45,6 @@ export async function addListing(listing){
     await addDoc(collection(db, "properties"), listing);
 }
 
-export async function deleteListing(slug) {
-    await deleteDoc(doc(db, "properties", slug));
+export async function deleteListing(id) {
+    await deleteDoc(doc(db, "properties", id));
 }
