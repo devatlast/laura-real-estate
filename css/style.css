@@ -1,4 +1,6 @@
-
+*{
+    scroll-behavior: smooth;
+}
 body {
     display: grid;
     grid-template-rows: auto 1fr auto ;
@@ -73,7 +75,7 @@ Property Homepage listings starts here ======= */
 .card {
     width: 90%;
     height: 90%;
-    margin: 8px;
+    margin: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     border-bottom: 1px solid lightgray;
     padding: 14px;

@@ -25,7 +25,7 @@ async function loadProperty() {
 
 
     const emailLink = `mailto:eolawale33@gmail.com?subject=Property Inquiry&body=${message}`;
-    const whatsappLink = `https://wa.me/2349136396093?text=${message}`;
+    const whatsappLink = `https://wa.me/9136396093?text=${message}`;
 
     container.innerHTML= `
     <div id="gallery"></div>
@@ -34,7 +34,7 @@ async function loadProperty() {
     <p>${property.location}</p>
     <p>${property.description}</p>
     <a href="${emailLink}"><button>Mail Agent</button></a>
-    <a hrer="${whatsappLink}"><button>Whatsapp Agent</button></a>
+    <a href="${whatsappLink}"><button>WhatsApp</button></a>
     
     `;
 
