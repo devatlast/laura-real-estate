@@ -75,7 +75,7 @@ Property Homepage listings starts here ======= */
 .card {
     width: auto;
     height: 90%;
-    margin: 8px;
+    margin: 4px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     border: 0.3px solid blue;
     padding: 14px;
