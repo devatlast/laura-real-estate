@@ -73,11 +73,11 @@ Property Homepage listings starts here ======= */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .card {
-    width: 90%;
+    width: auto;
     height: 90%;
     margin: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    border-bottom: 1px solid lightgray;
+    border: 0.5px solid blue;
     padding: 14px;
     border-radius: 10px;
 }
